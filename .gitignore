@@ -1,2 +1,6 @@
 node_modules
 reports
+tests_output
+chromedriver.log
+google_test_verbose.log
+nightwatch_google_test_verbose.log

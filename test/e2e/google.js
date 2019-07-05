@@ -7,9 +7,11 @@ module.exports = {
       browser
         .url('http://google.com')   // visit the url
         .waitForElementVisible('body') // wait for the body to be rendered
-        .assert.containsText('body', 'About') // assert body contains text
-        .waitForElementPresent('non-existing-one', 2000) // produces an assertion failure 
-        //.waitForElementVisible('non-existing-one', 2000) // produces an error in nightwatch 1.1.13
+        .assert.containsText('body', 'Google') // assert body contains text
+        //.waitForElementPresent('non-existing-one', 2000) // produces an assertion failure 
+        //.waitForElementNotPresent('body', 2000) // produces an assertion failure 
+        .waitForElementVisible('non-existing-one', 2000) // produces an error in nightwatch 1.1.13
+        //.waitForElementNotVisible('body-non-existing', 2000) // produces an error in nightwatch 1.1.13
         .end();
       },
   
