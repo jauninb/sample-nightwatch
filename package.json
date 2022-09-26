@@ -6,7 +6,7 @@
     "node": ">=8.16"
   },
   "dependencies": {
-    "nightwatch": "1.1.13",
+    "nightwatch": "1.7.13",
     "chromedriver": "^2.45",
     "selenium-server": "^3.14"
   }
